@@ -1,0 +1,6 @@
+09:39:31,136   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+09:39:31,140   INFO ScenarioRunSubCommand:52 - Created output directory: d:\GitHub\TUM\MLCMS-EX2-GroupK\.\vadere-project\output\task3
+09:39:31,141  ERROR ScenarioRunSubCommand:60 - scenario-file does not exist, is not a regular file or you do not have read permissions: .\vadere-preject\scenarios\Tasks\RiMEA6_OSM.scenario
+09:42:14,559   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+09:42:14,562   INFO ScenarioRunSubCommand:55 - Use output directory: d:\GitHub\TUM\MLCMS-EX2-GroupK\.\vadere-project\output\task3
+09:42:14,564  ERROR ScenarioRunSubCommand:60 - scenario-file does not exist, is not a regular file or you do not have read permissions: .\vadere-preject\scenarios\Tasks\RiMEA6_OSM.scenario

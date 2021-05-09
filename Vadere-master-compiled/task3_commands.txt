@@ -1,0 +1,1 @@
+java -jar vadere-console.jar scenario-run --scenario-file ".\Scenarios\Tasks\RiMEA6_OSM.scenario" --output-dir="output\task3\"

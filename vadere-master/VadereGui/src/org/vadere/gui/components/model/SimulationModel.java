@@ -104,6 +104,9 @@ public abstract class SimulationModel<T extends DefaultSimulationConfig> extends
 			return config.getPedestrianDefaultColor();
 		}
 
+
+		// if crt model is sir:
+
 		int groupId = ped.getGroupIds().getFirst();
 		Color c = colorMap.get(groupId);
 		if (c == null) {

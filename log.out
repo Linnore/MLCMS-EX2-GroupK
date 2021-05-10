@@ -4,3 +4,202 @@
 09:42:14,559   INFO STDOUTERR:15 - Redirect StdOut and StdErr
 09:42:14,562   INFO ScenarioRunSubCommand:55 - Use output directory: d:\GitHub\TUM\MLCMS-EX2-GroupK\.\vadere-project\output\task3
 09:42:14,564  ERROR ScenarioRunSubCommand:60 - scenario-file does not exist, is not a regular file or you do not have read permissions: .\vadere-preject\scenarios\Tasks\RiMEA6_OSM.scenario
+10:46:37,694   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+10:46:37,698   INFO ScenarioRunSubCommand:52 - Created output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\.\vadere-project\output\task3
+10:46:37,699  ERROR ScenarioRunSubCommand:60 - scenario-file does not exist, is not a regular file or you do not have read permissions: .\vadere-preject\scenarios\Tasks\RiMEA6_OSM.scenario
+10:48:17,648   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+10:48:17,653   INFO ScenarioRunSubCommand:52 - Created output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output\task3
+10:48:17,656  ERROR ScenarioRunSubCommand:60 - scenario-file does not exist, is not a regular file or you do not have read permissions: ..\vadere-preject\scenarios\Tasks\RiMEA6_OSM.scenario
+10:48:34,834   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+10:48:34,837   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output\task3
+10:48:34,838  ERROR ScenarioRunSubCommand:60 - scenario-file does not exist, is not a regular file or you do not have read permissions: ..\vadere-preject\scenarios\Tasks\RiMEA6_OSM.scenario
+10:48:58,710   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+10:48:58,710   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output\task3
+10:48:58,716  ERROR ScenarioRunSubCommand:60 - scenario-file does not exist, is not a regular file or you do not have read permissions: ..\vadere-preject\scenarios\RiMEA6_OSM.scenario
+10:50:37,233   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+10:50:37,238   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output\task3
+10:50:37,239  ERROR ScenarioRunSubCommand:60 - scenario-file does not exist, is not a regular file or you do not have read permissions: ..\vadere-preject\scenarios\RiMEA6_OSM.scenario
+10:50:51,439   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+10:50:51,442   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output\task3
+10:50:51,442  ERROR ScenarioRunSubCommand:60 - scenario-file does not exist, is not a regular file or you do not have read permissions: ..\vadere-preject\scenarios\RiMEA6_OSM.scenario
+10:51:31,437   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+10:51:31,437   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output\task3
+10:51:31,441  ERROR ScenarioRunSubCommand:60 - scenario-file does not exist, is not a regular file or you do not have read permissions: ..\..\vadere-preject\scenarios\RiMEA6_OSM.scenario
+10:51:46,037   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+10:51:46,040   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output\task3
+10:51:46,040  ERROR ScenarioRunSubCommand:60 - scenario-file does not exist, is not a regular file or you do not have read permissions: ..\vadere-preject\scenarios\RiMEA6_OSM.scenario
+10:52:47,360   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+10:52:47,364   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output\task3
+10:52:47,961   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+10:52:48,203   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\__cache__
+10:52:48,216   INFO ScenarioRun:145 - Initializing scenario: RiMEA6_OSM...
+10:52:48,221   INFO ScenarioRun:126 - scenario context initialized.
+10:52:48,224  ERROR ScenarioRun:201 - Simulation failed
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.resolve(String)" because the return value of "java.nio.file.Path.getParent()" is null
+	at org.vadere.simulator.control.simulation.ScenarioRun.loadMesh(ScenarioRun.java:222) ~[vadere-console.jar:?]
+	at org.vadere.simulator.control.simulation.ScenarioRun.loadFloorFieldMesh(ScenarioRun.java:211) ~[vadere-console.jar:?]
+	at org.vadere.simulator.control.simulation.ScenarioRun.run(ScenarioRun.java:150) ~[vadere-console.jar:?]
+	at org.vadere.simulator.entrypoints.cmd.commands.ScenarioRunSubCommand.run(ScenarioRunSubCommand.java:69) ~[vadere-console.jar:?]
+	at org.vadere.simulator.entrypoints.cmd.VadereConsole.main(VadereConsole.java:40) ~[vadere-console.jar:?]
+10:52:48,228   INFO ScenarioRun:261 - Simulation of scenario RiMEA6_OSM finished.
+10:52:48,229 STDERR STDOUTERR:32 - java.lang.RuntimeException: Simulation failed.
+10:52:48,230 STDERR STDOUTERR:32 - 	at org.vadere.simulator.control.simulation.ScenarioRun.run(ScenarioRun.java:202)
+10:52:48,230 STDERR STDOUTERR:32 - 	at org.vadere.simulator.entrypoints.cmd.commands.ScenarioRunSubCommand.run(ScenarioRunSubCommand.java:69)
+10:52:48,231 STDERR STDOUTERR:32 - 	at org.vadere.simulator.entrypoints.cmd.VadereConsole.main(VadereConsole.java:40)
+10:52:48,232 STDERR STDOUTERR:32 - Caused by: java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.resolve(String)" because the return value of "java.nio.file.Path.getParent()" is null
+10:52:48,233 STDERR STDOUTERR:32 - 	at org.vadere.simulator.control.simulation.ScenarioRun.loadMesh(ScenarioRun.java:222)
+10:52:48,233 STDERR STDOUTERR:32 - 	at org.vadere.simulator.control.simulation.ScenarioRun.loadFloorFieldMesh(ScenarioRun.java:211)
+10:52:48,234 STDERR STDOUTERR:32 - 	at org.vadere.simulator.control.simulation.ScenarioRun.run(ScenarioRun.java:150)
+10:52:48,235 STDERR STDOUTERR:32 - 	... 2 more
+10:52:48,236  ERROR ScenarioRunSubCommand:75 - java.lang.RuntimeException: Simulation failed.
+10:56:44,829   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+10:56:44,832   INFO ScenarioRunSubCommand:52 - Created output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output\task3
+10:56:45,305   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+10:56:45,472   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\__cache__
+10:56:45,481   INFO ScenarioRun:145 - Initializing scenario: RiMEA6_OSM...
+10:56:45,485   INFO ScenarioRun:126 - scenario context initialized.
+10:56:45,489  ERROR ScenarioRun:201 - Simulation failed
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.resolve(String)" because the return value of "java.nio.file.Path.getParent()" is null
+	at org.vadere.simulator.control.simulation.ScenarioRun.loadMesh(ScenarioRun.java:222) ~[vadere-console.jar:?]
+	at org.vadere.simulator.control.simulation.ScenarioRun.loadFloorFieldMesh(ScenarioRun.java:211) ~[vadere-console.jar:?]
+	at org.vadere.simulator.control.simulation.ScenarioRun.run(ScenarioRun.java:150) ~[vadere-console.jar:?]
+	at org.vadere.simulator.entrypoints.cmd.commands.ScenarioRunSubCommand.run(ScenarioRunSubCommand.java:69) ~[vadere-console.jar:?]
+	at org.vadere.simulator.entrypoints.cmd.VadereConsole.main(VadereConsole.java:40) ~[vadere-console.jar:?]
+10:56:45,493   INFO ScenarioRun:261 - Simulation of scenario RiMEA6_OSM finished.
+10:56:45,494 STDERR STDOUTERR:32 - java.lang.RuntimeException: Simulation failed.
+10:56:45,495 STDERR STDOUTERR:32 - 	at org.vadere.simulator.control.simulation.ScenarioRun.run(ScenarioRun.java:202)
+10:56:45,496 STDERR STDOUTERR:32 - 	at org.vadere.simulator.entrypoints.cmd.commands.ScenarioRunSubCommand.run(ScenarioRunSubCommand.java:69)
+10:56:45,497 STDERR STDOUTERR:32 - 	at org.vadere.simulator.entrypoints.cmd.VadereConsole.main(VadereConsole.java:40)
+10:56:45,498 STDERR STDOUTERR:32 - Caused by: java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.resolve(String)" because the return value of "java.nio.file.Path.getParent()" is null
+10:56:45,499 STDERR STDOUTERR:32 - 	at org.vadere.simulator.control.simulation.ScenarioRun.loadMesh(ScenarioRun.java:222)
+10:56:45,500 STDERR STDOUTERR:32 - 	at org.vadere.simulator.control.simulation.ScenarioRun.loadFloorFieldMesh(ScenarioRun.java:211)
+10:56:45,501 STDERR STDOUTERR:32 - 	at org.vadere.simulator.control.simulation.ScenarioRun.run(ScenarioRun.java:150)
+10:56:45,502 STDERR STDOUTERR:32 - 	... 2 more
+10:56:45,503  ERROR ScenarioRunSubCommand:75 - java.lang.RuntimeException: Simulation failed.
+10:57:51,818   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+10:57:51,822   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output\task3
+10:57:52,204   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+10:57:52,323   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\__cache__
+10:57:52,334   INFO ScenarioRun:145 - Initializing scenario: RiMEA6_OSM...
+10:57:52,340   INFO ScenarioRun:126 - scenario context initialized.
+10:57:52,342  ERROR ScenarioRun:201 - Simulation failed
+java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.resolve(String)" because the return value of "java.nio.file.Path.getParent()" is null
+	at org.vadere.simulator.control.simulation.ScenarioRun.loadMesh(ScenarioRun.java:222) ~[vadere-console.jar:?]
+	at org.vadere.simulator.control.simulation.ScenarioRun.loadFloorFieldMesh(ScenarioRun.java:211) ~[vadere-console.jar:?]
+	at org.vadere.simulator.control.simulation.ScenarioRun.run(ScenarioRun.java:150) ~[vadere-console.jar:?]
+	at org.vadere.simulator.entrypoints.cmd.commands.ScenarioRunSubCommand.run(ScenarioRunSubCommand.java:69) ~[vadere-console.jar:?]
+	at org.vadere.simulator.entrypoints.cmd.VadereConsole.main(VadereConsole.java:40) ~[vadere-console.jar:?]
+10:57:52,344   INFO ScenarioRun:261 - Simulation of scenario RiMEA6_OSM finished.
+10:57:52,345 STDERR STDOUTERR:32 - java.lang.RuntimeException: Simulation failed.
+10:57:52,348 STDERR STDOUTERR:32 - 	at org.vadere.simulator.control.simulation.ScenarioRun.run(ScenarioRun.java:202)
+10:57:52,349 STDERR STDOUTERR:32 - 	at org.vadere.simulator.entrypoints.cmd.commands.ScenarioRunSubCommand.run(ScenarioRunSubCommand.java:69)
+10:57:52,350 STDERR STDOUTERR:32 - 	at org.vadere.simulator.entrypoints.cmd.VadereConsole.main(VadereConsole.java:40)
+10:57:52,352 STDERR STDOUTERR:32 - Caused by: java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.resolve(String)" because the return value of "java.nio.file.Path.getParent()" is null
+10:57:52,352 STDERR STDOUTERR:32 - 	at org.vadere.simulator.control.simulation.ScenarioRun.loadMesh(ScenarioRun.java:222)
+10:57:52,352 STDERR STDOUTERR:32 - 	at org.vadere.simulator.control.simulation.ScenarioRun.loadFloorFieldMesh(ScenarioRun.java:211)
+10:57:52,353 STDERR STDOUTERR:32 - 	at org.vadere.simulator.control.simulation.ScenarioRun.run(ScenarioRun.java:150)
+10:57:52,355 STDERR STDOUTERR:32 - 	... 2 more
+10:57:52,356  ERROR ScenarioRunSubCommand:75 - java.lang.RuntimeException: Simulation failed.
+11:08:46,385   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+11:08:46,388   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output\task3
+11:08:46,856   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+11:08:47,028   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\.\vadere-project\scenarios\__cache__
+11:08:47,038   INFO ScenarioRun:145 - Initializing scenario: RiMEA6_OSM...
+11:08:47,044   INFO ScenarioRun:126 - scenario context initialized.
+11:08:47,046   INFO ScenarioRun:225 - no mesh RiMEA6_OSM.poly was found.
+11:08:47,046   INFO ScenarioRun:225 - no mesh RiMEA6_OSM_background.poly was found.
+11:08:47,130   INFO PotentialFieldDistancesBruteForce:49 - solve floor field (PotentialFieldDistancesBruteForce)
+11:08:47,137   INFO PotentialFieldDistancesBruteForce:106 - Progress:  0% -> 0/22801 [points]
+11:08:47,164   INFO PotentialFieldDistancesBruteForce:106 - Progress: 10% -> 2281/22801 [points]
+11:08:47,184   INFO PotentialFieldDistancesBruteForce:106 - Progress: 20% -> 4561/22801 [points]
+11:08:47,204   INFO PotentialFieldDistancesBruteForce:106 - Progress: 30% -> 6841/22801 [points]
+11:08:47,218   INFO PotentialFieldDistancesBruteForce:106 - Progress: 40% -> 9121/22801 [points]
+11:08:47,235   INFO PotentialFieldDistancesBruteForce:106 - Progress: 50% -> 11401/22801 [points]
+11:08:47,257   INFO PotentialFieldDistancesBruteForce:106 - Progress: 60% -> 13681/22801 [points]
+11:08:47,266   INFO PotentialFieldDistancesBruteForce:106 - Progress: 70% -> 15961/22801 [points]
+11:08:47,282   INFO PotentialFieldDistancesBruteForce:106 - Progress: 80% -> 18241/22801 [points]
+11:08:47,292   INFO PotentialFieldDistancesBruteForce:106 - Progress: 90% -> 20521/22801 [points]
+11:08:47,305   INFO PotentialFieldDistancesBruteForce:96 - floor field initialization time:171[ms]
+11:08:47,307   INFO Topography:414 - Set PedestrianIdCount to start value: 1
+11:08:47,427   INFO EikonalSolverDefaultProvider:23 - floor field initialization time:97[ms]
+11:08:47,428   INFO Simulation:259 - preLoop finished.
+11:08:50,221   INFO Simulation:362 - Finished writing all output files
+11:08:50,221   INFO ScenarioRun:261 - Simulation of scenario RiMEA6_OSM finished.
+11:09:02,466   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+11:09:02,468   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output\task3
+11:09:02,924   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+11:09:03,078   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\.\vadere-project\scenarios\__cache__
+11:09:03,088   INFO ScenarioRun:145 - Initializing scenario: RiMEA6_OSM...
+11:09:03,094   INFO ScenarioRun:126 - scenario context initialized.
+11:09:03,096   INFO ScenarioRun:225 - no mesh RiMEA6_OSM.poly was found.
+11:09:03,097   INFO ScenarioRun:225 - no mesh RiMEA6_OSM_background.poly was found.
+11:09:03,174   INFO PotentialFieldDistancesBruteForce:49 - solve floor field (PotentialFieldDistancesBruteForce)
+11:09:03,182   INFO PotentialFieldDistancesBruteForce:106 - Progress:  0% -> 0/22801 [points]
+11:09:03,216   INFO PotentialFieldDistancesBruteForce:106 - Progress: 10% -> 2281/22801 [points]
+11:09:03,241   INFO PotentialFieldDistancesBruteForce:106 - Progress: 20% -> 4561/22801 [points]
+11:09:03,257   INFO PotentialFieldDistancesBruteForce:106 - Progress: 30% -> 6841/22801 [points]
+11:09:03,272   INFO PotentialFieldDistancesBruteForce:106 - Progress: 40% -> 9121/22801 [points]
+11:09:03,290   INFO PotentialFieldDistancesBruteForce:106 - Progress: 50% -> 11401/22801 [points]
+11:09:03,311   INFO PotentialFieldDistancesBruteForce:106 - Progress: 60% -> 13681/22801 [points]
+11:09:03,321   INFO PotentialFieldDistancesBruteForce:106 - Progress: 70% -> 15961/22801 [points]
+11:09:03,339   INFO PotentialFieldDistancesBruteForce:106 - Progress: 80% -> 18241/22801 [points]
+11:09:03,352   INFO PotentialFieldDistancesBruteForce:106 - Progress: 90% -> 20521/22801 [points]
+11:09:03,362   INFO PotentialFieldDistancesBruteForce:96 - floor field initialization time:187[ms]
+11:09:03,371   INFO Topography:414 - Set PedestrianIdCount to start value: 1
+11:09:03,507   INFO EikonalSolverDefaultProvider:23 - floor field initialization time:114[ms]
+11:09:03,508   INFO Simulation:259 - preLoop finished.
+11:09:06,508   INFO Simulation:362 - Finished writing all output files
+11:09:06,509   INFO ScenarioRun:261 - Simulation of scenario RiMEA6_OSM finished.
+11:53:06,114   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+11:53:06,116   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output
+11:53:06,118  ERROR ScenarioRunSubCommand:60 - scenario-file does not exist, is not a regular file or you do not have read permissions: D:\GitHub\TUM\MLCMS-EX2-GroupK\vadere-project\senarios\RiMEA6_OSM.scenario
+11:58:31,957   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+11:58:31,962   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output
+11:58:32,359   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+11:58:32,543   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\vadere-project\scenarios\__cache__
+11:58:32,555   INFO ScenarioRun:145 - Initializing scenario: RiMEA6_OSM...
+11:58:32,563   INFO ScenarioRun:126 - scenario context initialized.
+11:58:32,567   INFO ScenarioRun:225 - no mesh RiMEA6_OSM.poly was found.
+11:58:32,568   INFO ScenarioRun:225 - no mesh RiMEA6_OSM_background.poly was found.
+11:58:32,653   INFO PotentialFieldDistancesBruteForce:49 - solve floor field (PotentialFieldDistancesBruteForce)
+11:58:32,661   INFO PotentialFieldDistancesBruteForce:106 - Progress:  0% -> 0/22801 [points]
+11:58:32,696   INFO PotentialFieldDistancesBruteForce:106 - Progress: 10% -> 2281/22801 [points]
+11:58:32,709   INFO PotentialFieldDistancesBruteForce:106 - Progress: 20% -> 4561/22801 [points]
+11:58:32,727   INFO PotentialFieldDistancesBruteForce:106 - Progress: 30% -> 6841/22801 [points]
+11:58:32,742   INFO PotentialFieldDistancesBruteForce:106 - Progress: 40% -> 9121/22801 [points]
+11:58:32,751   INFO PotentialFieldDistancesBruteForce:106 - Progress: 50% -> 11401/22801 [points]
+11:58:32,770   INFO PotentialFieldDistancesBruteForce:106 - Progress: 60% -> 13681/22801 [points]
+11:58:32,779   INFO PotentialFieldDistancesBruteForce:106 - Progress: 70% -> 15961/22801 [points]
+11:58:32,794   INFO PotentialFieldDistancesBruteForce:106 - Progress: 80% -> 18241/22801 [points]
+11:58:32,802   INFO PotentialFieldDistancesBruteForce:106 - Progress: 90% -> 20521/22801 [points]
+11:58:32,819   INFO PotentialFieldDistancesBruteForce:96 - floor field initialization time:163[ms]
+11:58:32,821   INFO Topography:414 - Set PedestrianIdCount to start value: 1
+11:58:32,936   INFO EikonalSolverDefaultProvider:23 - floor field initialization time:92[ms]
+11:58:32,937   INFO Simulation:259 - preLoop finished.
+11:58:35,679   INFO Simulation:362 - Finished writing all output files
+11:58:35,681   INFO ScenarioRun:261 - Simulation of scenario RiMEA6_OSM finished.
+12:04:50,235   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+12:04:50,238   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output
+12:04:50,634   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+12:04:50,772   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\vadere-project\scenarios\__cache__
+12:04:50,784   INFO ScenarioRun:145 - Initializing scenario: RiMEA6_OSM...
+12:04:50,790   INFO ScenarioRun:126 - scenario context initialized.
+12:04:50,793   INFO ScenarioRun:225 - no mesh RiMEA6_OSM.poly was found.
+12:04:50,794   INFO ScenarioRun:225 - no mesh RiMEA6_OSM_background.poly was found.
+12:04:50,874   INFO PotentialFieldDistancesBruteForce:49 - solve floor field (PotentialFieldDistancesBruteForce)
+12:04:50,879   INFO PotentialFieldDistancesBruteForce:106 - Progress:  0% -> 0/22801 [points]
+12:04:50,903   INFO PotentialFieldDistancesBruteForce:106 - Progress: 10% -> 2281/22801 [points]
+12:04:50,917   INFO PotentialFieldDistancesBruteForce:106 - Progress: 20% -> 4561/22801 [points]
+12:04:50,945   INFO PotentialFieldDistancesBruteForce:106 - Progress: 30% -> 6841/22801 [points]
+12:04:50,962   INFO PotentialFieldDistancesBruteForce:106 - Progress: 40% -> 9121/22801 [points]
+12:04:50,984   INFO PotentialFieldDistancesBruteForce:106 - Progress: 50% -> 11401/22801 [points]
+12:04:50,986   INFO PotentialFieldDistancesBruteForce:106 - Progress: 60% -> 13681/22801 [points]
+12:04:50,993   INFO PotentialFieldDistancesBruteForce:106 - Progress: 70% -> 15961/22801 [points]
+12:04:50,998   INFO PotentialFieldDistancesBruteForce:106 - Progress: 80% -> 18241/22801 [points]
+12:04:51,009   INFO PotentialFieldDistancesBruteForce:106 - Progress: 90% -> 20521/22801 [points]
+12:04:51,022   INFO PotentialFieldDistancesBruteForce:96 - floor field initialization time:145[ms]
+12:04:51,026   INFO Topography:414 - Set PedestrianIdCount to start value: 1
+12:04:51,128   INFO EikonalSolverDefaultProvider:23 - floor field initialization time:86[ms]
+12:04:51,129   INFO Simulation:259 - preLoop finished.
+12:04:54,135   INFO Simulation:362 - Finished writing all output files
+12:04:54,136   INFO ScenarioRun:261 - Simulation of scenario RiMEA6_OSM finished.

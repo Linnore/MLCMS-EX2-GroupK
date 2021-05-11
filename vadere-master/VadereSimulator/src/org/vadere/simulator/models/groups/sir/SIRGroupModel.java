@@ -140,22 +140,34 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 			;
 
 			//adding randomized pedestrians that will start infected
+
 			List<Integer> infectedIDS=new ArrayList<>();
+			Random myRandom = new Random();
 			while(infectedIDS.size()<this.attributesSIRG.getInfectionsAtStart()){
-				int r=random.nextInt(c.getElements().size());
+				int r=myRandom.nextInt(c.getElements().size());
 				if(!infectedIDS.contains(r)) {
 					infectedIDS.add(r);
 				}
 			}
 
+			/**
+			List<Integer> infectedIDS = new ArrayList<>(c.getElements().size());
+			for (int i = 0; i < n; i++){
+				infectedIDS.add(i);
+			}
+			Collections.shuffle(infectedIDS);
+			infectedIDS.subList(0, this.attributesSIRG.getInfectionsAtStart()).clear();
+			**/
+
 			//assigning the infection status
 			int i=0;
 			for(Pedestrian p : c.getElements()) {
 				if (infectedIDS.contains(i)){
-					assignToGroup(p, SIRType.ID_SUSCEPTIBLE.ordinal());
+					assignToGroup(p, SIRType.ID_INFECTED.ordinal());
 
 				} else {
-					assignToGroup(p, SIRType.ID_INFECTED.ordinal());
+					//elementRemoved(p)
+					assignToGroup(p, SIRType.ID_SUSCEPTIBLE.ordinal());
 				}
 				i++;
 			}
@@ -214,6 +226,7 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 		// check the positions of all pedestrians and switch groups to INFECTED (or REMOVED).
 		DynamicElementContainer<Pedestrian> c = topography.getPedestrianDynamicElements();
 
+		/**
 		VRectangle vrec=new VRectangle(0,0,this.topography.getBoundingBoxWidth(),this.topography.getBoundingBoxWidth());
 		LinkedCellsGrid lcg=new LinkedCellsGrid(vrec,this.topography.getBoundingBoxWidth());
 
@@ -235,26 +248,37 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 				}
 
 			}
-		}
+		}**/
+
+		// For debuging
 		/**
-		 if (c.getElements().size() > 0) {
-		 for(Pedestrian p : c.getElements()) {
-		 // loop over neighbors and set infected if we are close
-		 for(Pedestrian p_neighbor : c.getElements()) {
-		 if(p == p_neighbor || getGroup(p_neighbor).getID() != SIRType.ID_INFECTED.ordinal())
-		 continue;
-		 double dist = p.getPosition().distance(p_neighbor.getPosition());
-		 if (dist < attributesSIRG.getInfectionMaxDistance() &&
-		 this.random.nextDouble() < attributesSIRG.getInfectionRate()) {
-		 SIRGroup g = getGroup(p);
-		 if (g.getID() == SIRType.ID_SUSCEPTIBLE.ordinal()) {
-		 elementRemoved(p);
-		 assignToGroup(p, SIRType.ID_INFECTED.ordinal());
-		 }
-		 }
-		 }
-		 }
-		 }
+		int cnt=0;
+		for (Pedestrian p : c.getElements()){
+			if (getGroup(p).getID()==SIRType.ID_INFECTED.ordinal()) {
+				cnt++;
+			}
+		}
+		System.out.println(cnt);
 		 **/
+
+		 if (c.getElements().size() > 0) {
+			 for(Pedestrian p : c.getElements()) {
+			 // loop over neighbors and set infected if we are close
+				for(Pedestrian p_neighbor : c.getElements()) {
+					if(p == p_neighbor || getGroup(p_neighbor).getID() != SIRType.ID_INFECTED.ordinal())
+						continue;
+					double dist = p.getPosition().distance(p_neighbor.getPosition());
+					if (dist < attributesSIRG.getInfectionMaxDistance() &&
+						this.random.nextDouble() < attributesSIRG.getInfectionRate()) {
+						SIRGroup g = getGroup(p);
+						if (g.getID() == SIRType.ID_SUSCEPTIBLE.ordinal()) {
+							elementRemoved(p);
+							assignToGroup(p, SIRType.ID_INFECTED.ordinal()); }
+						}
+				}
+			 }
+		 }
+
+
 	}
 }

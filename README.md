@@ -6,7 +6,7 @@
 
 2. "vadere-master-compiled" contains the java executable files of our modified vadere. They are built using IntelliJ's build-in compiler. They work well as we examined, but still there may exist potential issues. Therefore, it is recommanded to run the source codes in "vadere-master".
 
-3. "vadere-project" contains out vadere project, including scenario files, output files, and screenshots our report used.
+3. "vadere-project" contains our vadere project, including scenario files, output files, and screenshots that our report used.
 
 4. "pythonsrc" contains all the python codes we wrote/used in this exercises. Especially, the "scenarioLoader" class we developed for task3 is in there.
 

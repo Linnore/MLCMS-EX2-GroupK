@@ -129,7 +129,7 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 		}
 	}
 
-	private void initializeGroupsOfInitialPedestrians() {
+	private void initializeGroupsOfInitialPedestrians()  {
 		// get all pedestrians already in topography
 		DynamicElementContainer<Pedestrian> c = topography.getPedestrianDynamicElements();
 
@@ -226,32 +226,34 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 		// check the positions of all pedestrians and switch groups to INFECTED (or REMOVED).
 		DynamicElementContainer<Pedestrian> c = topography.getPedestrianDynamicElements();
 
-		/**
+
 		VRectangle vrec=new VRectangle(0,0,this.topography.getBoundingBoxWidth(),this.topography.getBoundingBoxWidth());
 		LinkedCellsGrid lcg=new LinkedCellsGrid(vrec,this.topography.getBoundingBoxWidth());
 
 		for(Pedestrian p : c.getElements()) {
 			lcg.addObject(p);
+
+			//System.out.println(p.getPosition().x+p.getPosition().x);
 		}
 		for(Pedestrian p : c.getElements()) {
 			if(getGroup(p).getID() == SIRType.ID_INFECTED.ordinal()) {
-				List<Pedestrian> victims = lcg.getObjects(p.getPosition(), 5);
+				List<Pedestrian> victims = lcg.getObjects(p.getPosition(), this.attributesSIRG.getInfectionMaxDistance());
 
 				for (Pedestrian v : victims){
+
 					if(this.random.nextDouble() < attributesSIRG.getInfectionRate()) {
-						SIRGroup g = getGroup(v);
-						if (g.getID() == SIRType.ID_SUSCEPTIBLE.ordinal()) {
-							elementRemoved(p);
-							assignToGroup(p, SIRType.ID_INFECTED.ordinal());
-						}
+
+							//elementRemoved(p);
+							assignToGroup(v, SIRType.ID_INFECTED.ordinal());
+							
 					}
 				}
 
 			}
-		}**/
-
-		// For debuging
+		}
 		/**
+		// For debuging
+
 		int cnt=0;
 		for (Pedestrian p : c.getElements()){
 			if (getGroup(p).getID()==SIRType.ID_INFECTED.ordinal()) {
@@ -259,8 +261,8 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 			}
 		}
 		System.out.println(cnt);
-		 **/
-
+		**/
+		/**
 		 if (c.getElements().size() > 0) {
 			 for(Pedestrian p : c.getElements()) {
 			 // loop over neighbors and set infected if we are close
@@ -278,7 +280,6 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 				}
 			 }
 		 }
+		**/
 
-
-	}
-}
+	}}

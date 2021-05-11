@@ -111,9 +111,10 @@ public abstract class SimulationModel<T extends DefaultSimulationConfig> extends
 		Color c = colorMap.get(groupId);
 		if (c == null) {
 			if(groupId==0){
-				c=Color.GREEN;
-			} else if (groupId==1)
 				c=Color.RED;
+
+			} else if (groupId==1)
+				c=Color.GREEN;
 			else
 				c = new Color(Color.HSBtoRGB(random.nextFloat(), 1f, 0.75f));
 		}

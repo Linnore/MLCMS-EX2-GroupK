@@ -111,10 +111,16 @@ public abstract class SimulationModel<T extends DefaultSimulationConfig> extends
 		Color c = colorMap.get(groupId);
 		if (c == null) {
 			if(groupId==0){
+				//infected
 				c=Color.RED;
 
 			} else if (groupId==1)
+				//susceptible, healthy
 				c=Color.GREEN;
+			else if (groupId==3)
+				//recovered
+				c=Color.MAGENTA;
+
 			else
 				c = new Color(Color.HSBtoRGB(random.nextFloat(), 1f, 0.75f));
 		}

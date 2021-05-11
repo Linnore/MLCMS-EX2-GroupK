@@ -26,7 +26,7 @@ class scenarioLoader:
         self.dynamicElements_list = self.scenario_file_dict[
             "scenario"]["topography"]["dynamicElements"]
 
-    def addPed(self, x=0, y=0, speed=np.random.normal(1.34, 0.26), targetIDs=[]):
+    def addPed(self, x=0, y=0, id=-1, speed=np.random.normal(1.34, 0.26), targetIDs=[]):
         """Add a pedestrian into the dynamicElements list.
 
         Args:
@@ -37,7 +37,7 @@ class scenarioLoader:
         """
         ped = {
             "attributes": {
-                "id": 1,
+                "id": id,
                 "radius": 0.2,
                 "densityDependentSpeed": False,
                 "speedDistributionMean": 1.34,

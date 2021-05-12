@@ -56,8 +56,6 @@ def create_folder_data_scatter(folder):
         return None
     data = pd.read_csv(file_path, delimiter=" ")
 
-    print(data)
-
     ID_SUSCEPTIBLE = 1
     ID_INFECTED = 0
     ID_REMOVED = 2

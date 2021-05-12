@@ -6,7 +6,7 @@
     "files" : [ {
       "type" : "org.vadere.simulator.projects.dataprocessing.outputfile.EventtimePedestrianIdOutputFile",
       "filename" : "postvis.traj",
-      "processors" : [ 1, 2 ]
+      "processors" : [ 1, 2, 5 ]
     }, {
       "type" : "org.vadere.simulator.projects.dataprocessing.outputfile.TimestepPedestrianIdOverlapOutputFile",
       "filename" : "overlaps.csv",
@@ -15,6 +15,10 @@
       "type" : "org.vadere.simulator.projects.dataprocessing.outputfile.NoDataKeyOutputFile",
       "filename" : "overlapCount.txt",
       "processors" : [ 4 ]
+    }, {
+      "type" : "org.vadere.simulator.projects.dataprocessing.outputfile.EventtimePedestrianIdOutputFile",
+      "filename" : "groupID.txt",
+      "processors" : [ 5 ]
     } ],
     "processors" : [ {
       "type" : "org.vadere.simulator.projects.dataprocessing.processor.FootStepProcessor",
@@ -32,6 +36,9 @@
       "attributes" : {
         "pedestrianOverlapProcessorId" : 3
       }
+    }, {
+      "type" : "org.vadere.simulator.projects.dataprocessing.processor.FootStepGroupIDProcessor",
+      "id" : 5
     } ],
     "isTimestamped" : true,
     "isWriteMetaData" : false
@@ -58,7 +65,7 @@
         "targetPotentialModel" : "org.vadere.simulator.models.potential.fields.PotentialFieldTargetGrid",
         "pedestrianPotentialModel" : "org.vadere.simulator.models.potential.PotentialFieldPedestrianCompactSoftshell",
         "obstaclePotentialModel" : "org.vadere.simulator.models.potential.PotentialFieldObstacleCompactSoftshell",
-        "submodels" : [ ]
+        "submodels" : [ "org.vadere.simulator.models.groups.sir.SIRGroupModel" ]
       },
       "org.vadere.state.attributes.models.AttributesPotentialCompactSoftshell" : {
         "pedPotentialIntimateSpaceWidth" : 0.45,
@@ -90,6 +97,11 @@
           "width" : 0.2,
           "height" : 1.0
         }
+      },
+      "org.vadere.state.attributes.models.AttributesSIRG" : {
+        "infectionsAtStart" : 0,
+        "infectionRate" : 0.01,
+        "infectionMaxDistance" : 1.0
       }
     },
     "attributesSimulation" : {
@@ -227,7 +239,7 @@
       "stairs" : [ ],
       "targets" : [ {
         "id" : 6,
-        "absorbing" : true,
+        "absorbing" : false,
         "shape" : {
           "x" : 9.0,
           "y" : 20.5,
@@ -244,7 +256,7 @@
         "nextSpeed" : -1.0
       }, {
         "id" : 7,
-        "absorbing" : true,
+        "absorbing" : false,
         "shape" : {
           "x" : 15.0,
           "y" : 20.5,
@@ -261,7 +273,7 @@
         "nextSpeed" : -1.0
       }, {
         "id" : 8,
-        "absorbing" : true,
+        "absorbing" : false,
         "shape" : {
           "x" : 21.0,
           "y" : 20.5,
@@ -278,7 +290,7 @@
         "nextSpeed" : -1.0
       }, {
         "id" : 9,
-        "absorbing" : true,
+        "absorbing" : false,
         "shape" : {
           "x" : 25.5,
           "y" : 20.5,
@@ -295,7 +307,7 @@
         "nextSpeed" : -1.0
       }, {
         "id" : 15,
-        "absorbing" : true,
+        "absorbing" : false,
         "shape" : {
           "x" : 3.0,
           "y" : 3.0,
@@ -312,7 +324,7 @@
         "nextSpeed" : -1.0
       }, {
         "id" : 16,
-        "absorbing" : true,
+        "absorbing" : false,
         "shape" : {
           "x" : 25.5,
           "y" : 3.0,
@@ -329,7 +341,7 @@
         "nextSpeed" : -1.0
       }, {
         "id" : 11,
-        "absorbing" : true,
+        "absorbing" : false,
         "shape" : {
           "x" : 9.0,
           "y" : 6.5,
@@ -346,7 +358,7 @@
         "nextSpeed" : -1.0
       }, {
         "id" : 12,
-        "absorbing" : true,
+        "absorbing" : false,
         "shape" : {
           "x" : 15.0,
           "y" : 6.5,
@@ -363,7 +375,7 @@
         "nextSpeed" : -1.0
       }, {
         "id" : 13,
-        "absorbing" : true,
+        "absorbing" : false,
         "shape" : {
           "x" : 21.0,
           "y" : 6.5,
@@ -380,7 +392,7 @@
         "nextSpeed" : -1.0
       }, {
         "id" : 14,
-        "absorbing" : true,
+        "absorbing" : false,
         "shape" : {
           "x" : 25.5,
           "y" : 6.5,
@@ -397,7 +409,7 @@
         "nextSpeed" : -1.0
       }, {
         "id" : 10,
-        "absorbing" : true,
+        "absorbing" : false,
         "shape" : {
           "x" : 2.5,
           "y" : 13.5,

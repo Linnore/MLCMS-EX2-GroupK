@@ -24,7 +24,7 @@ pdf_file_path = os.environ.get('PDF_FILES', '')
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css',
                         dbc.themes.BOOTSTRAP]
 
-app = dash.Dash(__name__)  #, external_stylesheets=external_stylesheets)
+app = dash.Dash(__name__)  # , external_stylesheets=external_stylesheets)
 app.title = 'SIR visualization'
 
 app.layout = html.Div(children=[
@@ -34,7 +34,8 @@ app.layout = html.Div(children=[
         className="app-header",
         children=[
             html.Span('SIR visualization', className="app-header--title"),
-            html.Span('- showing Vadere results', className="app-header--title-small")
+            html.Span('- showing Vadere results',
+                      className="app-header--title-small")
         ]
     ),
 
@@ -48,14 +49,15 @@ app.layout = html.Div(children=[
         dbc.CardBody([
             dbc.Row([
                 dbc.Col([
-                    html.Button('Reload', id='button-reload', className="app-button"),
+                    html.Button('Reload', id='button-reload',
+                                className="app-button"),
                 ]),
                 dbc.Col([
-                     dcc.Input(id='input-folder-path', type='text', size='200',
-                               value=r'C:\Users\XXXXX\output',
-                               placeholder='Insert the path to the output folders here', debounce=True)
+                    dcc.Input(id='input-folder-path', type='text', size='200',
+                              value=r'D:\GitHub\TUM\vadere-project\output',
+                              placeholder='Insert the path to the output folders here', debounce=True)
                 ])
-                ]),
+            ]),
             dbc.Row([
                 dbc.Col([
                     dcc.Dropdown(
@@ -100,7 +102,8 @@ def update_figure(selected_values):
             figures.extend(scatter)
     if len(figures) > 0:
         fig = go.Figure(data=figures)
-        fig.update_layout(title='Susceptible / Infected / Removed')
+
+        fig.update_layout(title='Susceptible / Infected / Removed', width=550)
         return fig
 
     raise PreventUpdate

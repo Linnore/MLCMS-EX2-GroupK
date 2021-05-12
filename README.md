@@ -4,7 +4,7 @@
 
 1. "vadere-master" contains the source codes of modified vadere. The SIR model and FootStepGroupID processor are modified and integrated.
 
-2. "vadere-master-compiled" contains the java executable files of the compiled master vadere. We did not recompiled our modified Vadere into jar file, so the Vadere inside this folder does not work with SIR model.
+2. "vadere-master-compiled" contains the java executable files of the compiled master vadere. We did not recompile our modified Vadere into jar file, so the Vadere inside this folder does not work with SIR model.
 
 3. "vadere-project" contains our vadere project, including scenario files, output files, and screenshots that our report used.
 

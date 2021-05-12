@@ -319,3 +319,177 @@ java.lang.NullPointerException: Cannot invoke "java.nio.file.Path.resolve(String
 15:16:09,867   INFO Simulation:259 - preLoop finished.
 15:16:12,210   INFO Simulation:362 - Finished writing all output files
 15:16:12,211   INFO ScenarioRun:261 - Simulation of scenario RiMEA_Test6_corner finished.
+16:40:36,005   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+16:40:36,010   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output
+16:40:36,481 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+16:40:36,535   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+16:40:36,750   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\vadere-project\scenarios\__cache__
+16:40:36,760   INFO ScenarioRun:145 - Initializing scenario: RiMEA_Test6_corner...
+16:40:36,767   INFO ScenarioRun:126 - scenario context initialized.
+16:40:36,770   INFO ScenarioRun:225 - no mesh RiMEA_Test6_corner.poly was found.
+16:40:36,770   INFO ScenarioRun:225 - no mesh RiMEA_Test6_corner_background.poly was found.
+16:40:36,865   INFO PotentialFieldDistancesBruteForce:49 - solve floor field (PotentialFieldDistancesBruteForce)
+16:40:36,873   INFO PotentialFieldDistancesBruteForce:106 - Progress:  0% -> 0/25921 [points]
+16:40:36,907   INFO PotentialFieldDistancesBruteForce:106 - Progress: 10% -> 2593/25921 [points]
+16:40:36,942   INFO PotentialFieldDistancesBruteForce:106 - Progress: 20% -> 5185/25921 [points]
+16:40:36,971   INFO PotentialFieldDistancesBruteForce:106 - Progress: 30% -> 7777/25921 [points]
+16:40:37,008   INFO PotentialFieldDistancesBruteForce:106 - Progress: 40% -> 10369/25921 [points]
+16:40:37,019   INFO PotentialFieldDistancesBruteForce:106 - Progress: 50% -> 12961/25921 [points]
+16:40:37,029   INFO PotentialFieldDistancesBruteForce:106 - Progress: 60% -> 15553/25921 [points]
+16:40:37,038   INFO PotentialFieldDistancesBruteForce:106 - Progress: 70% -> 18145/25921 [points]
+16:40:37,053   INFO PotentialFieldDistancesBruteForce:106 - Progress: 80% -> 20737/25921 [points]
+16:40:37,074   INFO PotentialFieldDistancesBruteForce:106 - Progress: 90% -> 23329/25921 [points]
+16:40:37,098   INFO PotentialFieldDistancesBruteForce:96 - floor field initialization time:225[ms]
+16:40:37,102   INFO Topography:414 - Set PedestrianIdCount to start value: 1
+16:40:37,275   INFO EikonalSolverDefaultProvider:23 - floor field initialization time:138[ms]
+16:40:37,277   INFO Simulation:259 - preLoop finished.
+16:40:39,631   INFO Simulation:362 - Finished writing all output files
+16:40:39,632   INFO ScenarioRun:261 - Simulation of scenario RiMEA_Test6_corner finished.
+16:58:35,994   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+16:58:36,006   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output
+16:58:36,528 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+16:58:36,582   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+16:58:36,805   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\vadere-project\scenarios\__cache__
+16:58:36,818   INFO ScenarioRun:145 - Initializing scenario: RiMEA_Test6_corner...
+16:58:36,825   INFO ScenarioRun:126 - scenario context initialized.
+16:58:36,829   INFO ScenarioRun:225 - no mesh RiMEA_Test6_corner.poly was found.
+16:58:36,830   INFO ScenarioRun:225 - no mesh RiMEA_Test6_corner_background.poly was found.
+16:58:36,925   INFO PotentialFieldDistancesBruteForce:49 - solve floor field (PotentialFieldDistancesBruteForce)
+16:58:36,933   INFO PotentialFieldDistancesBruteForce:106 - Progress:  0% -> 0/25921 [points]
+16:58:36,973   INFO PotentialFieldDistancesBruteForce:106 - Progress: 10% -> 2593/25921 [points]
+16:58:37,021   INFO PotentialFieldDistancesBruteForce:106 - Progress: 20% -> 5185/25921 [points]
+16:58:37,051   INFO PotentialFieldDistancesBruteForce:106 - Progress: 30% -> 7777/25921 [points]
+16:58:37,092   INFO PotentialFieldDistancesBruteForce:106 - Progress: 40% -> 10369/25921 [points]
+16:58:37,108   INFO PotentialFieldDistancesBruteForce:106 - Progress: 50% -> 12961/25921 [points]
+16:58:37,126   INFO PotentialFieldDistancesBruteForce:106 - Progress: 60% -> 15553/25921 [points]
+16:58:37,148   INFO PotentialFieldDistancesBruteForce:106 - Progress: 70% -> 18145/25921 [points]
+16:58:37,169   INFO PotentialFieldDistancesBruteForce:106 - Progress: 80% -> 20737/25921 [points]
+16:58:37,196   INFO PotentialFieldDistancesBruteForce:106 - Progress: 90% -> 23329/25921 [points]
+16:58:37,223   INFO PotentialFieldDistancesBruteForce:96 - floor field initialization time:292[ms]
+16:58:37,228   INFO Topography:414 - Set PedestrianIdCount to start value: 1
+16:58:37,388   INFO EikonalSolverDefaultProvider:23 - floor field initialization time:132[ms]
+16:58:37,390   INFO Simulation:259 - preLoop finished.
+16:58:39,699   INFO Simulation:362 - Finished writing all output files
+16:58:39,700   INFO ScenarioRun:261 - Simulation of scenario RiMEA_Test6_corner finished.
+17:24:16,376   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+17:24:16,380   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output
+17:24:16,967 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+17:24:17,046   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+17:24:17,409   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\vadere-project\scenarios\__cache__
+17:24:17,428   INFO ScenarioRun:145 - Initializing scenario: RiMEA_Test6_corner...
+17:24:17,438   INFO ScenarioRun:126 - scenario context initialized.
+17:24:17,443   INFO ScenarioRun:225 - no mesh RiMEA_Test6_corner.poly was found.
+17:24:17,446   INFO ScenarioRun:225 - no mesh RiMEA_Test6_corner_background.poly was found.
+17:24:17,643   INFO PotentialFieldDistancesBruteForce:49 - solve floor field (PotentialFieldDistancesBruteForce)
+17:24:17,656   INFO PotentialFieldDistancesBruteForce:106 - Progress:  0% -> 0/25921 [points]
+17:24:17,707   INFO PotentialFieldDistancesBruteForce:106 - Progress: 10% -> 2593/25921 [points]
+17:24:17,752   INFO PotentialFieldDistancesBruteForce:106 - Progress: 20% -> 5185/25921 [points]
+17:24:17,779   INFO PotentialFieldDistancesBruteForce:106 - Progress: 30% -> 7777/25921 [points]
+17:24:17,815   INFO PotentialFieldDistancesBruteForce:106 - Progress: 40% -> 10369/25921 [points]
+17:24:17,833   INFO PotentialFieldDistancesBruteForce:106 - Progress: 50% -> 12961/25921 [points]
+17:24:17,844   INFO PotentialFieldDistancesBruteForce:106 - Progress: 60% -> 15553/25921 [points]
+17:24:17,859   INFO PotentialFieldDistancesBruteForce:106 - Progress: 70% -> 18145/25921 [points]
+17:24:17,880   INFO PotentialFieldDistancesBruteForce:106 - Progress: 80% -> 20737/25921 [points]
+17:24:17,911   INFO PotentialFieldDistancesBruteForce:106 - Progress: 90% -> 23329/25921 [points]
+17:24:17,936   INFO PotentialFieldDistancesBruteForce:96 - floor field initialization time:288[ms]
+17:24:17,941   INFO Topography:414 - Set PedestrianIdCount to start value: 1
+17:24:18,110   INFO EikonalSolverDefaultProvider:23 - floor field initialization time:135[ms]
+17:24:18,111   INFO Simulation:259 - preLoop finished.
+17:24:20,784   INFO Simulation:362 - Finished writing all output files
+17:24:20,785   INFO ScenarioRun:261 - Simulation of scenario RiMEA_Test6_corner finished.
+09:49:11,659   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+09:49:11,663   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output
+09:49:12,699 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+09:49:12,792   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+09:49:13,228   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\vadere-project\scenarios\__cache__
+09:49:13,245   INFO ScenarioRun:145 - Initializing scenario: RiMEA_Test6_corner...
+09:49:13,255   INFO ScenarioRun:126 - scenario context initialized.
+09:49:13,260   INFO ScenarioRun:225 - no mesh RiMEA_Test6_corner.poly was found.
+09:49:13,261   INFO ScenarioRun:225 - no mesh RiMEA_Test6_corner_background.poly was found.
+09:49:13,458   INFO PotentialFieldDistancesBruteForce:49 - solve floor field (PotentialFieldDistancesBruteForce)
+09:49:13,488   INFO PotentialFieldDistancesBruteForce:106 - Progress:  0% -> 0/25921 [points]
+09:49:13,586   INFO PotentialFieldDistancesBruteForce:106 - Progress: 10% -> 2593/25921 [points]
+09:49:13,691   INFO PotentialFieldDistancesBruteForce:106 - Progress: 20% -> 5185/25921 [points]
+09:49:13,744   INFO PotentialFieldDistancesBruteForce:106 - Progress: 30% -> 7777/25921 [points]
+09:49:13,820   INFO PotentialFieldDistancesBruteForce:106 - Progress: 40% -> 10369/25921 [points]
+09:49:13,857   INFO PotentialFieldDistancesBruteForce:106 - Progress: 50% -> 12961/25921 [points]
+09:49:13,878   INFO PotentialFieldDistancesBruteForce:106 - Progress: 60% -> 15553/25921 [points]
+09:49:13,907   INFO PotentialFieldDistancesBruteForce:106 - Progress: 70% -> 18145/25921 [points]
+09:49:13,945   INFO PotentialFieldDistancesBruteForce:106 - Progress: 80% -> 20737/25921 [points]
+09:49:13,986   INFO PotentialFieldDistancesBruteForce:106 - Progress: 90% -> 23329/25921 [points]
+09:49:14,025   INFO PotentialFieldDistancesBruteForce:96 - floor field initialization time:559[ms]
+09:49:14,036   INFO Topography:414 - Set PedestrianIdCount to start value: 1
+09:49:14,427   INFO EikonalSolverDefaultProvider:23 - floor field initialization time:339[ms]
+09:49:14,428   INFO Simulation:259 - preLoop finished.
+09:49:17,915   INFO Simulation:362 - Finished writing all output files
+09:49:17,918   INFO ScenarioRun:261 - Simulation of scenario RiMEA_Test6_corner finished.
+08:52:17,747   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+08:52:17,747   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\vadere-project\output
+08:52:18,265 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+08:52:18,313   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+08:52:18,530   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\vadere-project\scenarios\__cache__
+08:52:18,542   INFO ScenarioRun:145 - Initializing scenario: RiMEA_Test6_corner...
+08:52:18,551   INFO ScenarioRun:126 - scenario context initialized.
+08:52:18,556   INFO ScenarioRun:225 - no mesh RiMEA_Test6_corner.poly was found.
+08:52:18,557   INFO ScenarioRun:225 - no mesh RiMEA_Test6_corner_background.poly was found.
+08:52:18,658   INFO PotentialFieldDistancesBruteForce:49 - solve floor field (PotentialFieldDistancesBruteForce)
+08:52:18,678   INFO PotentialFieldDistancesBruteForce:106 - Progress:  0% -> 0/25921 [points]
+08:52:18,718   INFO PotentialFieldDistancesBruteForce:106 - Progress: 10% -> 2593/25921 [points]
+08:52:18,758   INFO PotentialFieldDistancesBruteForce:106 - Progress: 20% -> 5185/25921 [points]
+08:52:18,785   INFO PotentialFieldDistancesBruteForce:106 - Progress: 30% -> 7777/25921 [points]
+08:52:18,817   INFO PotentialFieldDistancesBruteForce:106 - Progress: 40% -> 10369/25921 [points]
+08:52:18,829   INFO PotentialFieldDistancesBruteForce:106 - Progress: 50% -> 12961/25921 [points]
+08:52:18,844   INFO PotentialFieldDistancesBruteForce:106 - Progress: 60% -> 15553/25921 [points]
+08:52:18,849   INFO PotentialFieldDistancesBruteForce:106 - Progress: 70% -> 18145/25921 [points]
+08:52:18,869   INFO PotentialFieldDistancesBruteForce:106 - Progress: 80% -> 20737/25921 [points]
+08:52:18,898   INFO PotentialFieldDistancesBruteForce:106 - Progress: 90% -> 23329/25921 [points]
+08:52:18,923   INFO PotentialFieldDistancesBruteForce:96 - floor field initialization time:250[ms]
+08:52:18,930   INFO Topography:414 - Set PedestrianIdCount to start value: 1
+08:52:19,100   INFO EikonalSolverDefaultProvider:23 - floor field initialization time:133[ms]
+08:52:19,102   INFO Simulation:259 - preLoop finished.
+08:52:21,618   INFO Simulation:362 - Finished writing all output files
+08:52:21,619   INFO ScenarioRun:261 - Simulation of scenario RiMEA_Test6_corner finished.
+08:52:44,908   INFO STDOUTERR:15 - Redirect StdOut and StdErr
+08:52:44,908   INFO ScenarioRunSubCommand:55 - Use output directory: D:\GitHub\TUM\MLCMS-EX2-GroupK\..\vadere-project\output
+08:52:45,482 STDOUT STDOUTERR:22 - Topography Warning:
+   Target contains an obstacle. This setup works but reduces the actual size of the target. 
+   Obstacle overlaps with a source. This setup will spawn pedestrians within the obstacle.  
+
+08:52:45,522   INFO VadereConfig:66 - Use config file from path C:\Users\pcfeo\.config\vadere.conf
+08:52:45,691   INFO ScenarioCache:85 - Cache search location: D:\GitHub\TUM\MLCMS-EX2-GroupK\vadere-project\scenarios\__cache__
+08:52:45,701   INFO ScenarioRun:145 - Initializing scenario: RiMEA_Test6_corner_addedPedestrians...
+08:52:45,711   INFO ScenarioRun:126 - scenario context initialized.
+08:52:45,711   INFO ScenarioRun:225 - no mesh RiMEA_Test6_corner_addedPedestrians.poly was found.
+08:52:45,711   INFO ScenarioRun:225 - no mesh RiMEA_Test6_corner_addedPedestrians_background.poly was found.
+08:52:45,781   INFO PotentialFieldDistancesBruteForce:49 - solve floor field (PotentialFieldDistancesBruteForce)
+08:52:45,781   INFO PotentialFieldDistancesBruteForce:106 - Progress:  0% -> 0/25921 [points]
+08:52:45,836   INFO PotentialFieldDistancesBruteForce:106 - Progress: 10% -> 2593/25921 [points]
+08:52:45,868   INFO PotentialFieldDistancesBruteForce:106 - Progress: 20% -> 5185/25921 [points]
+08:52:45,888   INFO PotentialFieldDistancesBruteForce:106 - Progress: 30% -> 7777/25921 [points]
+08:52:45,908   INFO PotentialFieldDistancesBruteForce:106 - Progress: 40% -> 10369/25921 [points]
+08:52:45,938   INFO PotentialFieldDistancesBruteForce:106 - Progress: 50% -> 12961/25921 [points]
+08:52:45,958   INFO PotentialFieldDistancesBruteForce:106 - Progress: 60% -> 15553/25921 [points]
+08:52:45,958   INFO PotentialFieldDistancesBruteForce:106 - Progress: 70% -> 18145/25921 [points]
+08:52:45,988   INFO PotentialFieldDistancesBruteForce:106 - Progress: 80% -> 20737/25921 [points]
+08:52:46,008   INFO PotentialFieldDistancesBruteForce:106 - Progress: 90% -> 23329/25921 [points]
+08:52:46,038   INFO PotentialFieldDistancesBruteForce:96 - floor field initialization time:257[ms]
+08:52:46,048   INFO Topography:414 - Set PedestrianIdCount to start value: 6
+08:52:46,178   INFO EikonalSolverDefaultProvider:23 - floor field initialization time:110[ms]
+08:52:46,178   INFO Simulation:259 - preLoop finished.
+08:52:48,482   INFO Simulation:362 - Finished writing all output files
+08:52:48,492   INFO ScenarioRun:261 - Simulation of scenario RiMEA_Test6_corner_addedPedestrians finished.

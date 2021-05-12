@@ -2,7 +2,7 @@
   "name" : "RiMEA_Test6_corner",
   "description" : "",
   "release" : "1.15",
-  "commithash" : "27bc882f6125b56a956bb8dac46549fba5b30c8c",
+  "commithash" : "No version control commit hash available!",
   "processWriters" : {
     "files" : [ {
       "type" : "org.vadere.simulator.projects.dataprocessing.outputfile.EventtimePedestrianIdOutputFile",
@@ -228,20 +228,7 @@
         "targetIds" : [ 2 ],
         "groupSizeDistribution" : [ 1.0 ],
         "dynamicElementType" : "PEDESTRIAN",
-        "attributesPedestrian" : {
-          "id" : -1,
-          "radius" : 0.33,
-          "densityDependentSpeed" : false,
-          "speedDistributionMean" : 1.34,
-          "speedDistributionStandardDeviation" : 0.0,
-          "minimumSpeed" : 1.34,
-          "maximumSpeed" : 1.34,
-          "acceleration" : 2.0,
-          "footstepHistorySize" : 4,
-          "searchRadius" : 1.0,
-          "walkingDirectionCalculation" : "BY_TARGET_CENTER",
-          "walkingDirectionSameIfAngleLessOrEqual" : 45.0
-        }
+        "attributesPedestrian" : null
       } ],
       "dynamicElements" : [ ],
       "attributesPedestrian" : {

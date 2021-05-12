@@ -225,7 +225,7 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 	public void update(final double simTimeInSec) {
 
 		// clock check each second
-		
+
 		// check the positions of all pedestrians and switch groups to INFECTED (or REMOVED).
 		DynamicElementContainer<Pedestrian> c = topography.getPedestrianDynamicElements();
 

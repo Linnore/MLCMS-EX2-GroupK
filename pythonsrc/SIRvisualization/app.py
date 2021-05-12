@@ -54,7 +54,7 @@ app.layout = html.Div(children=[
                 ]),
                 dbc.Col([
                     dcc.Input(id='input-folder-path', type='text', size='200',
-                              value=r'D:\GitHub\TUM\vadere-project\output',
+                              value=r'D:\xxx\output',
                               placeholder='Insert the path to the output folders here', debounce=True)
                 ])
             ]),

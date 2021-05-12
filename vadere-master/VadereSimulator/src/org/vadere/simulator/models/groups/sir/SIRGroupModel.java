@@ -262,8 +262,8 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
             }
         }
 
-        System.out.println("updateCounter " + updateCounter);
-        System.out.println("simTimeinSec " + simTimeInSec);
+        //System.out.println("updateCounter " + updateCounter);
+        //System.out.println("simTimeinSec " + simTimeInSec);
 
         /**
          // For debuging

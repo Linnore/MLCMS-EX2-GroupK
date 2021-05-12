@@ -15,27 +15,33 @@ def file_df_to_count_df(df,
     """
     pedestrian_ids = df['pedestrianId'].unique()
     sim_times = df['simTime'].unique()
-    group_counts = pd.DataFrame(columns=['simTime', 'group-s', 'group-i', 'group-r'])
+    group_counts = pd.DataFrame(
+        columns=['simTime', 'group-s', 'group-i', 'group-r'])
     group_counts['simTime'] = sim_times
     group_counts['group-s'] = 0
     group_counts['group-i'] = 0
     group_counts['group-r'] = 0
 
     for pid in pedestrian_ids:
-        simtime_group = df[df['pedestrianId'] == pid][['simTime', 'groupId-PID5']].values
-        current_state = ID_SUSCEPTIBLE
+        simtime_group = df[df['pedestrianId'] ==
+                           pid][['simTime', 'groupId-PID5']].values
         group_counts.loc[group_counts['simTime'] >= 0, 'group-s'] += 1
+        current_state = ID_SUSCEPTIBLE
         for (st, g) in simtime_group:
             if g != current_state and g == ID_INFECTED and current_state == ID_SUSCEPTIBLE:
                 current_state = g
                 group_counts.loc[group_counts['simTime'] > st, 'group-s'] -= 1
                 group_counts.loc[group_counts['simTime'] > st, 'group-i'] += 1
                 break
+
+        current_state = ID_INFECTED
+        for (st, g) in simtime_group:
             if g != current_state and g == ID_REMOVED and current_state == ID_INFECTED:
                 current_state = g
                 group_counts.loc[group_counts['simTime'] > st, 'group-i'] -= 1
                 group_counts.loc[group_counts['simTime'] > st, 'group-r'] += 1
                 break
+
     return group_counts
 
 
@@ -56,20 +62,27 @@ def create_folder_data_scatter(folder):
     ID_INFECTED = 0
     ID_REMOVED = 2
 
-    group_counts = file_df_to_count_df(data, ID_INFECTED=ID_INFECTED, ID_SUSCEPTIBLE=ID_SUSCEPTIBLE, ID_REMOVED=ID_REMOVED)
+    group_counts = file_df_to_count_df(
+        data, ID_INFECTED=ID_INFECTED, ID_SUSCEPTIBLE=ID_SUSCEPTIBLE, ID_REMOVED=ID_REMOVED)
     # group_counts.plot()
     scatter_s = go.Scatter(x=group_counts['simTime'],
                            y=group_counts['group-s'],
-                           name='susceptible ' + os.path.basename(folder),
-                           mode='lines')
+                           name='Susceptible ',
+                           mode='lines',
+                           line=dict(width=0.5, color='rgb(0, 0, 255)'),
+                           stackgroup="one")
     scatter_i = go.Scatter(x=group_counts['simTime'],
                            y=group_counts['group-i'],
-                           name='infected ' + os.path.basename(folder),
-                           mode='lines')
+                           name='Infected ',
+                           mode='lines',
+                           line=dict(width=0.5, color='rgb(255, 0, 0)'),
+                           stackgroup="one")
 
     scatter_r = go.Scatter(x=group_counts['simTime'],
                            y=group_counts['group-r'],
-                           name='removed ' + os.path.basename(folder),
-                           mode='lines')
+                           name='Removed ',
+                           mode='lines',
+                           line=dict(width=0.5, color='rgb(0, 255, 0)'),
+                           stackgroup="one")
 
-    return [scatter_s, scatter_i, scatter_r], group_counts
+    return [scatter_i, scatter_s, scatter_r], group_counts

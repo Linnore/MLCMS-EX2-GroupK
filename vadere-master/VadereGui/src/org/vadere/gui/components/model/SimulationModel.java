@@ -10,6 +10,7 @@ import java.util.function.Function;
 import org.jetbrains.annotations.NotNull;
 import org.vadere.meshing.mesh.gen.PMesh;
 import org.vadere.meshing.mesh.inter.IMesh;
+import org.vadere.simulator.models.groups.sir.SIRType;
 import org.vadere.state.scenario.Agent;
 import org.vadere.state.scenario.Pedestrian;
 import org.vadere.util.geometry.shapes.IPoint;
@@ -104,20 +105,17 @@ public abstract class SimulationModel<T extends DefaultSimulationConfig> extends
 			return config.getPedestrianDefaultColor();
 		}
 
-
-		// if crt model is sir:
-
 		int groupId = ped.getGroupIds().getFirst();
 		Color c = colorMap.get(groupId);
 		if (c == null) {
-			if(groupId==0){
+			if(groupId== SIRType.ID_INFECTED.ordinal()){
 				//infected
 				c=Color.RED;
 
-			} else if (groupId==1)
+			} else if (groupId==SIRType.ID_SUSCEPTIBLE.ordinal())
 				//susceptible, healthy
 				c=Color.GREEN;
-			else if (groupId==3)
+			else if (groupId==SIRType.ID_REMOVED.ordinal())
 				//recovered
 				c=Color.MAGENTA;
 

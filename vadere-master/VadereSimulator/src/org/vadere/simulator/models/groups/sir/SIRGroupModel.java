@@ -246,22 +246,19 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 
                 for (Pedestrian v : victims) {
 
-                    if (getGroup(v).getID() != SIRType.ID_Recovered.ordinal() && random.nextDouble() < attributesSIRG.getInfectionRate()) {
+                    if (getGroup(v).getID() != SIRType.ID_REMOVED.ordinal() && random.nextDouble() < attributesSIRG.getInfectionRate()) {
 
-                        //elementRemoved(p);
+                        elementRemoved(v);
                         assignToGroup(v, SIRType.ID_INFECTED.ordinal());
 
                     }
                 }
 
-            }
-        }
-        for (Pedestrian p : c.getElements()) {
-            if (getGroup(p).getID() == SIRType.ID_INFECTED.ordinal()) {
+				if (this.random.nextDouble() < attributesSIRG.getRecoveryRate()) {
+				    elementRemoved(p);
+					assignToGroup(p, SIRType.ID_REMOVED.ordinal());
+				}
 
-                if (this.random.nextDouble() < attributesSIRG.getRecoveryRate()) {
-                    assignToGroup(p, SIRType.ID_Recovered.ordinal());
-                }
             }
         }
 

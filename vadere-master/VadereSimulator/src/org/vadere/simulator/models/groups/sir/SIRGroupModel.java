@@ -219,7 +219,7 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
     @Override
     public void update(final double simTimeInSec) {
 
-
+        
         if (simTimeInSec <= updateCounter) {
             return;
         }

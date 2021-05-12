@@ -2,7 +2,6 @@
   "name" : "Static_infection_without_recovery",
   "description" : "",
   "release" : "1.15",
-  "commithash" : "No version control commit hash available!",
   "processWriters" : {
     "files" : [ {
       "type" : "org.vadere.simulator.projects.dataprocessing.outputfile.EventtimePedestrianIdOutputFile",
@@ -102,7 +101,7 @@
       "org.vadere.state.attributes.models.AttributesSIRG" : {
         "infectionsAtStart" : 10,
         "infectionRate" : 0.01,
-        "recoveryRate" : 0.01,
+        "recoveryRate" : 0.0,
         "infectionMaxDistance" : 1.0
       }
     },

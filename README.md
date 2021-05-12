@@ -8,9 +8,11 @@
 
 3. "vadere-project" contains our vadere project, including scenario files, output files, and screenshots that our report used.
 
-4. "pythonsrc" contains all the python codes we wrote/used in this exercises. Especially, the "scenarioLoader" class we developed for task3 is in there.
+4. "vadere-project-supermarket" contains the vadere project specified for the supermarket test.
 
-5. At the root of our repo, jupyter notebooks of the corresponding tasks show the workflow of our solutions. They worth a look if you want to check how we finish the tasks in details. 
+5. "pythonsrc" contains all the python codes we wrote/used in this exercises. Especially, the "scenarioLoader" class we developed for task3 is in there.
+
+6. At the root of our repo, jupyter notebooks of the corresponding tasks show the workflow of our solutions. They worth a look if you want to check how we finish the tasks in details. 
 
 ## Contributed by:
 Junle Li, Oliver Beck, Chengqi Zhou

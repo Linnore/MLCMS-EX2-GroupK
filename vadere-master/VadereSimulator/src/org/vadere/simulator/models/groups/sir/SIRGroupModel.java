@@ -211,6 +211,7 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 
 	@Override
 	public void preLoop(final double simTimeInSec) {
+		// this.cnt = 0
 		initializeGroupsOfInitialPedestrians();
 		topography.addElementAddedListener(Pedestrian.class, this);
 		topography.addElementRemovedListener(Pedestrian.class, this);
@@ -223,6 +224,8 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 	@Override
 	public void update(final double simTimeInSec) {
 
+		// clock check each second
+		
 		// check the positions of all pedestrians and switch groups to INFECTED (or REMOVED).
 		DynamicElementContainer<Pedestrian> c = topography.getPedestrianDynamicElements();
 
@@ -241,7 +244,7 @@ public class SIRGroupModel extends AbstractGroupModel<SIRGroup> {
 
 				for (Pedestrian v : victims){
 
-					if(this.random.nextDouble() < attributesSIRG.getInfectionRate()) {
+					if(getGroup(v).getID() != SIRType.ID_Recovered.ordinal() && random.nextDouble() < attributesSIRG.getInfectionRate()) {
 
 							//elementRemoved(p);
 							assignToGroup(v, SIRType.ID_INFECTED.ordinal());
